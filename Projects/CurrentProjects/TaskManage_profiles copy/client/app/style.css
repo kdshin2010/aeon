@@ -1,0 +1,27 @@
+.table_container {
+	margin-left: 10%;
+}
+.table {
+	width: 60%;
+}
+
+
+
+
+.form_container {
+	position: absolute;
+	margin-left: 10%;
+	width: 70%;
+}
+
+.form_container .col-sm-2 {
+	margin-right: 10px;
+	display: inline;
+}
+
+.form-horizontal {
+	width: 60%;
+}
+
+
+

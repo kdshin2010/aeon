@@ -1,0 +1,75 @@
+<!DOCTYPE html >
+<html ng-app='myApp'>
+<head>
+{{testDate}}
+	<title>Task Manager</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./app/style.css">
+	</head>
+<body  ng-controller='MainCtrl'>
+<div class='main_container'>
+	<div class='edit_task'>
+
+	</div>
+
+	<div class='table_container' >
+		<h2><strong>Task</strong></h2>
+			<table class='table'>
+				<thead>
+					<tr>
+						<th>Tasks</th>
+						<th>Priority</th>
+						<th>Created</th>
+						<th>Deadline</th>
+						<th>Actions</th>
+
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat='task in tasks' | >
+						<td ng-bind='task.name'></td>
+						<td> {{task.priority}}</td>
+						<td> {{task.created | date:"MM/dd/yyyy"}}</td>
+						<td> {{task.deadline | date:"MM/dd/yyyy"}} </td>
+						<td><button class='btn btn-danger' style='float:left' ng-click='removeTask(task._id)'>Remove</button></td>
+				
+				</tbody>
+			</table>
+		</div>
+	<div class='form_container' style='vertical-align: top'>
+		<h2><strong>Add a new task!</strong></h2>
+		<form class='form-inline'>
+			<div class='form-group'>
+				<label class='col-sm-2 control-label'>Task</label>
+				<div class='col-sm-10'>
+					<input type='datetime' ng-model='newTask.task' class='form-control'>
+				</div>
+			</div>
+			<div class='form-group'>
+				<label class='col-sm-2 control-label'>Priority</label>
+				<div class='col-sm-10'>
+					<select ng-model='newTask.priority'>
+						<option value='HIGH'>HIGH</option>
+						<option value='MEDIUM'>MEDIUM</option>
+						<option value='LOW'>LOW</option>
+					</select>
+				</div>
+			</div>
+			<div class='form-group'>
+				<label class='col-sm-2 control-label'>Deadline</label>
+				<div class='col-sm-10'>
+					<input type='Date' class='form-control' ng-model='newTask.deadline'>
+				</div>
+			</div>
+			<button ng-click='addTask()'>Add Task</button>
+		</form>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+	<script src="javascript/moment.js"></script>
+
+	<script src="javascript/module.js"></script>
+	<script src="javascript/main.controller.js"></script>
+	<script src="javascript/main.service.js"></script>
+
+</body>
+</html>

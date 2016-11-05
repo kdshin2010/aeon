@@ -1,0 +1,96 @@
+.table_container {
+	margin-left: 10%;
+}
+.table {
+	width: 40%;
+}
+.login_page {
+	position: relative;
+	margin-left: 20px;
+}
+
+#play-btn {
+	background-color: red;
+	margin-left: 50%;
+	width: 100px;
+}
+
+.login_form {
+  width: 600px;
+  margin: 20px auto;
+}
+
+.form_container {
+	position: absolute;
+	margin-left: 10%;
+	width: 70%;
+}
+
+.form_container .col-sm-2 {
+	margin-right: 10px;
+	display: inline;
+}
+
+.form-horizontal {
+	width: 60%;
+}
+.view_questions {
+	width: 40%;
+}
+
+.scores_container{
+	margin-left: 30%;
+	margin-top: 50px;
+}
+
+.play_button {
+	width: 400px;
+	position: relative;
+	left: 20%;
+	border: solid;
+	margin: 0 auto;
+}
+.button_container {
+	margin-left: 20%;
+}
+
+/* Adding Questions Page */
+.question_container {
+	margin-left: 100px;
+	width: 1300px;
+	height:1300px;
+	border:solid;
+	display: inline-block;
+}
+
+.question_form {
+	width: 30%;
+	border: solid;
+	float: left;
+}
+
+.view_questions {
+	width: 40%;
+	float: left;
+	border:solid;
+	margin-left: 30px;
+	overflow: hidden;
+}
+
+/*    *************   */
+
+
+.new_question {
+	margin-left: 100px;
+}
+.questions {
+	width: 400px;
+	padding: 10px;
+}
+
+.play_container {
+	margin-left: 30px;
+}
+.view_score_container {
+	margin-left: 30px;']'
+}

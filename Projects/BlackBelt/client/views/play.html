@@ -1,0 +1,32 @@
+<div class='play_container' ng-controller= 'QuestionCtrl'>
+	<div class='play header'>
+		<h4>Hi Kyle!</h4>
+		<h4>Choose an answer for each of the questions and submit the test once done<h4>
+		<h4>Good Luck!</h4>
+	</div>
+	<div class='questions' ng-repeat='question in questions'>
+<!-- 	{{check}}
+	{{newAnswer}}
+	{{testing}}
+	{{newAnswerA}}
+	{{newAnswerB}}
+	{{newAnswerC}} -->
+	{{question}}
+
+
+	{{answer | json}}
+		<h5>{{question.question}}</h5>
+		<form ng-model='answer' ng-controller='QuestionCtrl'>
+		  <input type="radio" name="gender" ng-value="{{question.correct}}" ng-model='$parent.$parent.newAnswerA'> {{question.correct}}<br>
+		  <input type="radio" name="gender" ng-value="{{question.fake1}}" ng-model='$parent.$parent.newAnswerB'> {{question.fake1}}<br>
+		  <input type="radio" name="gender" ng-value="{{question.fake2}}" ng-model='$parent.$parent.newAnswerC'> 
+		  {{question.fake2}}
+		  			</form>
+
+
+	</div>
+		 <button type="submit" class="btn btn-primary" ng-click='checkAnswer(newAnswer)'>Submit</button>
+	  	 <button type="submit" style= 'margin-left: 10px' class="btn btn-danger">Cancel</button>
+
+
+</div>

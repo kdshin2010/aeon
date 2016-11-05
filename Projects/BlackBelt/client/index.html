@@ -1,0 +1,39 @@
+<!DOCTYPE html >
+<html>
+<head>
+	<title>Task Manager</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+<body ng-app='myApp'>
+	<ul class="nav nav-tabs">
+	  <li role="presentation" class="active"><a href="#">Home</a></li>
+	  <li role="presentation"><a href="#/questions">Add a Question</a></li>
+	  <li role="presentation" style='float: right'><a href="#">Logout</a></li>
+	</ul>
+
+	<div ng-view=""></div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.min.js"></script>
+
+ 	<script src="app/module.js"></script>
+
+
+		<!-- 	Auth   -->	
+ 	<script src="app/auth/auth.service.js"></script>
+ 	<script src="app/auth/register.controller.js"></script>
+  	<script src="app/auth/logout.controller.js"></script>
+   	<script src="app/auth/login.controller.js"></script>
+
+   			<!-- Main -->
+	<script src="app/main/main.controller.js"></script>
+	<script src="app/main/main.service.js"></script>
+
+   			<!-- Question -->
+	<script src="app/question/question.controller.js"></script>
+	<script src="app/question/question.service.js"></script>
+
+</body>
+</html>

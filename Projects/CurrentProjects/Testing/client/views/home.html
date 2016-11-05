@@ -1,0 +1,22 @@
+<div class='home' ng-controller='MainCtrl'>
+	<h4 style='margin-left: 7%'>Hello {{userInformation.user.username}} </h4>
+	<div class='home_container'>
+				<button id="play-btn" class='btn btn-primary'  ng-click='play()'>Play</button>
+				<h3 style='margin-left: 43%'>Click the button to start!</h3>
+		<div class = 'scores_container'>
+			<span style='margin-left: 30%'>Search<input type='text'>
+			<table class='table'>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Score</th>
+					</tr>
+					<tr ng-repeat = 'score in allScores'>
+						<td ng-bind = 'score.username'></td>
+						<td ng-bind = 'score.score'>Name</td>
+					</tr>
+				</thead>
+			</table>
+		<div>
+	</div>
+</div>

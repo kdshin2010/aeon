@@ -1,0 +1,44 @@
+
+* {
+}
+
+/*h3 {
+	{ margin:3%; background-color: #c4d8ed; }
+}*/
+
+
+#search_filter {
+	position: relative;
+	left: 55%;
+	width: 15%;
+}
+
+.container_fluid {
+	margin-top:10%;
+	margin:auto;
+	position:absolute;
+	width: 80%;
+}
+.container {
+
+}
+.table {
+	width: 70%;
+}
+
+.form-group {
+	width: 35%;
+}
+
+.col-xs-6 {
+	margin: 10px;
+	height: 400px;
+	width: 400px;
+	color: red;
+	border: solid;
+}
+.post_container {
+	margin-top: 3%;
+	width: 100%;
+	max-height: 30%;
+}

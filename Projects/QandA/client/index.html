@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head ng-app='myApp'>
+	<title>QandA</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="content/style.css">
+</head>
+<body>
+
+	Here
+
+	<a href="#/posts">Posts</a>
+
+    <div ng-view class='container'></div>
+
+	<!-- Third Party JS -->
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+	<script src="https://code.angularjs.org/1.4.4/angular-route.js"></script>
+
+	<!-- Main App Module -->
+    <script src="app/app.module.js"></script>
+
+    <!-- Posts Module -->
+    <script src="app/posts/posts.module.js"></script>
+    <script src="app/posts/posts.controller.js"></script>
+    <script src="app/posts/config.route.js"></script>
+
+</body>
+</html>

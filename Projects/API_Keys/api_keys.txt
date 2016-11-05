@@ -1,0 +1,7 @@
+EAT_8 May3
+	taxjar = require("taxjar")("bd500e410729da592779e6eee4cd951e")
+
+
+	mailjet api key = require /// check mailjet .com
+
+	

@@ -1,0 +1,31 @@
+<div class='play_container' ng-controller= 'QuestionCtrl'>
+
+	<div class='play header'>
+		<h4>Hi Kyle!</h4>
+		<h4>Choose an answer for each of the questions and submit the test once done<h4>
+		<h4>Good Luck!</h4>
+	</div>
+	<div ng-repeat = 'question in questions'>
+		{{question}}
+		<h4>{{question.question}}</h4>
+		<form>
+		<div id="shuffle">
+
+				<div>	
+					<input type='radio' name='radio' value='correct' ng-model = 'question.answer'> {{question.correct}}</br>
+				</div>
+				<div>
+					<input type='radio' name='radio' value='wrong' ng-model='question.answer'> {{question.fake1}}</br>
+				</div>
+				<div>
+					<input type='radio' name ='radio' value='wrong' ng-model='question.answer'> {{question.fake2}}</br>
+				</div>
+				</div>
+					<button ng-click='removeQuestion(question._id)'>Remove Question</button>
+	</div>
+
+		<button class='btn btn-primary' ng-click = 'calculate_score()'>Submit Answers</button>
+		</form>
+ </div>
+</div>
+
